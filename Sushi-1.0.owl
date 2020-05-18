@@ -1,0 +1,645 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/Group4/ontologies/Sushi#"
+     xml:base="http://www.semanticweb.org/Group4/ontologies/Sushi"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-12="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#contains -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#contains"/>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasPart"/>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasShape -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasShape"/>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#packagedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#packagedIn"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#price -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#price">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#rating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#rating">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#weight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#weight">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Allergy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Allergy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Diet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Country -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Country">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#FoodAttributes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Diet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Diet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#FoodAttributes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#FoodAttributes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#FoodAttributes"/>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Hot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Hot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Spiciness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Keto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Keto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Diet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Medium -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Medium">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Spiciness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Mild -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Mild">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Spiciness"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Mussel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Mussel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Seafood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#PaperPackage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#PaperPackage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Packages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#PlasicPagage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#PlasicPagage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Packages"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Round -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Round">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Shapes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Salad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Salad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Sashimi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Sashimi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Sushi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Scare -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Scare">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Shapes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Seafood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Seafood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Ingedients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Shrimp -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Shrimp">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Seafood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Spiciness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Spiciness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#FoodAttributes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Vegan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Vegan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Diet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Vegetarian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Vegetarian">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#contains"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Seafood"/>
+                                    <rdf:Description rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Meat"/>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Diet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#CalifoniaRole -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#CalifoniaRole">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Sushi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Chirashi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Chirashi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Sushi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Cooking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Cooking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#MakingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Dish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Dish"/>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Fish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Fish">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Seafood"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Food">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Dish"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Fuit -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Fuit">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Ingedients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Garden -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Garden"/>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Grilling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Grilling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#MakingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Gunkanmaki -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Gunkanmaki">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Sushi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Ingedients -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Ingedients">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Maki -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Maki">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Sushi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#MakingProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#MakingProcess">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#FoodAttributes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Meat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Meat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Ingedients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Nigiri -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Nigiri">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Sushi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Nuts -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Nuts">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Ingedients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#OpenKitchen -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#OpenKitchen"/>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Oshi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Oshi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Sushi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Packages -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Packages">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#FoodAttributes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Raw -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Raw">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#MakingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Restaurant -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Restaurant"/>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Rice -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Rice">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Ingedients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Seaweed -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Seaweed">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Ingedients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Shapes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Shapes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#FoodAttributes"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Soup -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Soup">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Spices -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Spices">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Ingedients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Sushi -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Sushi">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Tekka -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Tekka">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Sushi"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Tofu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Tofu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Ingedients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Vegetables -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Vegetables">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Ingedients"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Avocado -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Avocado">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Fuit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Avocado_Maki -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Avocado_Maki">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Maki"/>
+        <untitled-ontology-12:contains rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Avocado"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#China -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#China">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Japan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Japan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Red_Cherry_Shrimp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Red_Cherry_Shrimp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Shrimp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Salmon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Salmon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Fish"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Sashimi_Moriawase -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Sashimi_Moriawase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Sashimi"/>
+        <untitled-ontology-12:contains rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Salmon"/>
+        <untitled-ontology-12:contains rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Shrimp"/>
+        <untitled-ontology-12:contains rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Tuna"/>
+        <untitled-ontology-12:contains rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#calamaris"/>
+        <untitled-ontology-12:contains rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#cichlid"/>
+        <untitled-ontology-12:contains rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#scallop"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Shrimp -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Shrimp">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Seafood"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Tuna -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Tuna">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Fish"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#Usa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Usa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#calamaris -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#calamaris">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Fish"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#cichlid -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#cichlid">
+        <rdf:type rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Fish"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#scallop -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#scallop">
+        <rdf:type rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Mussel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Hot"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Medium"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Mild"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
