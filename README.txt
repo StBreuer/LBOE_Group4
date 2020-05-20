@@ -3,6 +3,7 @@ CHANGELOG:
 - change hasPart to not transitive/reflexiv and theirfore added hasPartNondirect
 - add some more Individuals and Classes
 - add questions file
+- add isPartOf (inverse of hasPart)
 
 CHANGELOG:
 - fixed terminology, added ingredients and classes
