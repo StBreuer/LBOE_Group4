@@ -1,0 +1,16 @@
+Instance:
+hasPart min 4 Ingredient (doesn't work)
+
+Instance:
+Vegetarian
+
+Instance:
+Sushi and (hasOrigen some (not{japan}))
+
+Don't know how to query for Datatypes
+maybe define new datatype that matches what I want?
+but anyways ... 
+I want to know how large the makibox is therefore I query for the box that is part of the makibox (makibox is a dish maybe make it a box as well)
+
+isPartOf some (Dish and (hasPart some {Avocadomaki}))
+
