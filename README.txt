@@ -1,4 +1,10 @@
 CHANGELOG:
+- add example Origen not in Japan (doesn't work)
+- change hasPart to not transitive/reflexiv and theirfore added hasPartNondirect
+- add some more Individuals and Classes
+- add questions file
+
+CHANGELOG:
 - fixed terminology, added ingredients and classes
 - menus would be best taken care of just as sets of Restaurant -> serves -> Dish 
 - dishes are the meals with utensils, the entrees on the menu (that have a price, weight, and so on)
