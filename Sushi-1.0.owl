@@ -92,9 +92,9 @@
     
 
 
-    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#hasPartNondirect -->
+    <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#hasPart -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#hasPartNondirect">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#hasPart">
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#isPartOfNondirect"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
@@ -106,7 +106,7 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#isPartOf">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#isPartOfNondirect"/>
-        <owl:inverseOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasPart"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasPartDirect"/>
     </owl:ObjectProperty>
     
 
@@ -137,10 +137,10 @@
     
 
 
-    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasPart -->
+    <!-- http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasPartDirect -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasPart">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#hasPartNondirect"/>
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasPartDirect">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#hasPart"/>
     </owl:ObjectProperty>
     
 
@@ -536,7 +536,7 @@
             <owl:Class>
                 <owl:complementOf>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasPart"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasPartDirect"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#AnimalProduct"/>
                     </owl:Restriction>
                 </owl:complementOf>
@@ -552,7 +552,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Vegetarian">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasPart"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasPartDirect"/>
                 <owl:allValuesFrom>
                     <owl:Class>
                         <owl:complementOf rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Meat"/>
@@ -596,11 +596,11 @@
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasPart"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasPartDirect"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Utensils"/>
                     </owl:Restriction>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasPart"/>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasPartDirect"/>
                         <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Food"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
@@ -807,7 +807,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Tofu">
         <owl:equivalentClass>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasPart"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasPartDirect"/>
                 <owl:someValuesFrom>
                     <owl:Class>
                         <owl:oneOf rdf:parseType="Collection">
@@ -853,7 +853,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#AvocadoMaki">
         <rdf:type rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Maki"/>
-        <untitled-ontology-12:hasPart rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Avocado"/>
+        <untitled-ontology-12:hasPartDirect rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Avocado"/>
     </owl:NamedIndividual>
     
 
@@ -861,8 +861,8 @@
     <!-- http://www.semanticweb.org/Group4/ontologies/Sushi#AvocadoMakiBox -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#AvocadoMakiBox">
-        <untitled-ontology-12:hasPart rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#AvocadoMaki"/>
-        <untitled-ontology-12:hasPart rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#MediumPlasicBox"/>
+        <untitled-ontology-12:hasPartDirect rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#AvocadoMaki"/>
+        <untitled-ontology-12:hasPartDirect rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#MediumPlasicBox"/>
     </owl:NamedIndividual>
     
 
@@ -871,11 +871,11 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Bangkok_Roll">
         <rdf:type rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#InsideOut"/>
-        <untitled-ontology-12:hasPart rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Avocado"/>
-        <untitled-ontology-12:hasPart rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Lime"/>
-        <untitled-ontology-12:hasPart rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Mayo"/>
-        <untitled-ontology-12:hasPart rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#RedCherryShrimp"/>
-        <untitled-ontology-12:hasPart rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Salmon"/>
+        <untitled-ontology-12:hasPartDirect rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Avocado"/>
+        <untitled-ontology-12:hasPartDirect rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Lime"/>
+        <untitled-ontology-12:hasPartDirect rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Mayo"/>
+        <untitled-ontology-12:hasPartDirect rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#RedCherryShrimp"/>
+        <untitled-ontology-12:hasPartDirect rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Salmon"/>
     </owl:NamedIndividual>
     
 
@@ -999,10 +999,10 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Mayo">
         <rdf:type rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Ingredient"/>
-        <untitled-ontology-12:hasPart rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#ChickenEgg"/>
-        <untitled-ontology-12:hasPart rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#LemonJuice"/>
-        <untitled-ontology-12:hasPart rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Oil"/>
-        <untitled-ontology-12:hasPart rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Vinegar"/>
+        <untitled-ontology-12:hasPartDirect rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#ChickenEgg"/>
+        <untitled-ontology-12:hasPartDirect rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#LemonJuice"/>
+        <untitled-ontology-12:hasPartDirect rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Oil"/>
+        <untitled-ontology-12:hasPartDirect rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Vinegar"/>
     </owl:NamedIndividual>
     
 
@@ -1110,10 +1110,10 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#SesameCaliforniaRoll">
         <rdf:type rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#CalifoniaRoll"/>
         <hasOrigen rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#USA"/>
-        <untitled-ontology-12:hasPart rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Avocado"/>
-        <untitled-ontology-12:hasPart rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Mayo"/>
-        <untitled-ontology-12:hasPart rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Sesame"/>
-        <untitled-ontology-12:hasPart rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#kanikama"/>
+        <untitled-ontology-12:hasPartDirect rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Avocado"/>
+        <untitled-ontology-12:hasPartDirect rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Mayo"/>
+        <untitled-ontology-12:hasPartDirect rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Sesame"/>
+        <untitled-ontology-12:hasPartDirect rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#kanikama"/>
     </owl:NamedIndividual>
     
 
@@ -1139,9 +1139,9 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Soja_Roll_vegan">
         <rdf:type rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#InsideOut"/>
-        <untitled-ontology-12:hasPart rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#arugula"/>
-        <untitled-ontology-12:hasPart rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#soyLeaf"/>
-        <untitled-ontology-12:hasPart rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#sweetPapper"/>
+        <untitled-ontology-12:hasPartDirect rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#arugula"/>
+        <untitled-ontology-12:hasPartDirect rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#soyLeaf"/>
+        <untitled-ontology-12:hasPartDirect rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#sweetPapper"/>
     </owl:NamedIndividual>
     
 
@@ -1200,7 +1200,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#TofuCheese">
         <rdf:type rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Ingredient"/>
-        <untitled-ontology-12:hasPart rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Soy"/>
+        <untitled-ontology-12:hasPartDirect rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Soy"/>
     </owl:NamedIndividual>
     
 
@@ -1297,14 +1297,14 @@
     <owl:Class>
         <owl:complementOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasPart"/>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasPartDirect"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#Nut"/>
             </owl:Restriction>
         </owl:complementOf>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#NutFree"/>
     </owl:Class>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasPart"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasPartDirect"/>
         <owl:allValuesFrom>
             <owl:Class>
                 <owl:unionOf rdf:parseType="Collection">
@@ -1318,7 +1318,7 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Pescaterian"/>
     </owl:Restriction>
     <owl:Restriction>
-        <owl:onProperty rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasPart"/>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/steffen/ontologies/2020/4/untitled-ontology-12#hasPartDirect"/>
         <owl:allValuesFrom>
             <owl:Class>
                 <owl:complementOf rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Grain"/>
@@ -1326,6 +1326,13 @@
         </owl:allValuesFrom>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/Group4/ontologies/Sushi#Glutenfree"/>
     </owl:Restriction>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Avocado"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/Group4/ontologies/Sushi#Sesame"/>
+        </owl:distinctMembers>
+    </rdf:Description>
 </rdf:RDF>
 
 

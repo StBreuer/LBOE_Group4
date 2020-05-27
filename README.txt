@@ -1,3 +1,9 @@
+
+CHANGELOG:
+- made some queries work see DLquery.txt
+-add hasFilling and wrappedIn Object properties and made them disjoint
+
+
 CHANGELOG:
 - add example Origen not in Japan (doesn't work)
 - change hasPart to not transitive/reflexiv and theirfore added hasPartNondirect

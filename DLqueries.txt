@@ -1,9 +1,16 @@
-Instance:
-hasPart min 4 Ingredient (doesn't work)
+### WORKS
 
-Instance:
-Vegetarian
+Subclass of
+hasPart min 4 Ingredient Works now
 
+Question I made Fruit and Sauce/Avocado Disjoint but what if I have some kind of avocado sauce
+
+Subclass of
+Vegetarian and Sushi
+
+
+
+### DOESN'T WORK
 Instance:
 Sushi and (hasOrigen some (not{japan}))
 
